@@ -14,7 +14,7 @@ package acromusashi.stream.ml.common.notify;
 
 import java.util.Map;
 
-import storm.trident.operation.TridentOperationContext;
+import org.apache.storm.trident.operation.TridentOperationContext;
 
 /**
  * 結果をログ出力する通知クラス

@@ -14,9 +14,9 @@ package acromusashi.stream.ml.clustering.kmeans.state;
 
 import java.util.Map;
 
-import storm.trident.state.State;
-import storm.trident.state.StateFactory;
-import backtype.storm.task.IMetricsContext;
+import org.apache.storm.task.IMetricsContext;
+import org.apache.storm.trident.state.State;
+import org.apache.storm.trident.state.StateFactory;
 
 /**
  * KmeansInfinispanStateを生成するFactoryクラス

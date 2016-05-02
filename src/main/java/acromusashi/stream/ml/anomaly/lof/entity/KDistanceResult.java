@@ -15,8 +15,8 @@ package acromusashi.stream.ml.anomaly.lof.entity;
 import java.io.Serializable;
 import java.util.List;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * K距離算出結果を保持するEntityクラス

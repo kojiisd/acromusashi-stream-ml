@@ -14,8 +14,8 @@ package acromusashi.stream.ml.loganalyze;
 
 import java.util.Date;
 
-import storm.trident.operation.CombinerAggregator;
-import storm.trident.tuple.TridentTuple;
+import org.apache.storm.trident.operation.CombinerAggregator;
+import org.apache.storm.trident.tuple.TridentTuple;
 
 /**
  * ApacheLogの統計値を算出するためのAggregatorクラス

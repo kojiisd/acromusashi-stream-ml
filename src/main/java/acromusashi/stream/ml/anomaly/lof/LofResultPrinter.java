@@ -15,10 +15,10 @@ package acromusashi.stream.ml.anomaly.lof;
 import java.util.Arrays;
 import java.util.Map;
 
+import org.apache.storm.trident.operation.TridentOperationContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import storm.trident.operation.TridentOperationContext;
 import acromusashi.stream.ml.anomaly.lof.entity.LofResult;
 import acromusashi.stream.ml.common.notify.ResultNotifier;
 

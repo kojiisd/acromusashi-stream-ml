@@ -4,7 +4,7 @@
   <name>acromusashi-stream-ml</name>
   <groupId>jp.co.acroquest.acromusashi</groupId>
   <artifactId>acromusashi-stream-ml</artifactId>
-  <version>0.2.4-SNAPSHOT</version>
+  <version>0.2.5</version>
   <packaging>jar</packaging>
   <description>Realtime Big Data Platform</description>
   <url>https://github.com/acromusashi</url>
@@ -75,8 +75,8 @@
     <jdk.version>1.7</jdk.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <site.encoding>UTF-8</site.encoding>
-    <acromusashi-stream-version>0.5.4</acromusashi-stream-version>
-    <storm.version>0.9.3</storm.version>
+    <acromusashi-stream-version>0.6.8</acromusashi-stream-version>
+    <storm.version>1.0.0</storm.version>
     <jacoco.include.package>acromusashi.stream.ml.*</jacoco.include.package>
   </properties>
 
@@ -178,6 +178,10 @@
           <groupId>org.elasticsearch</groupId>
           <artifactId>elasticsearch</artifactId>
         </exclusion>
+        <exclusion>
+          <groupId>com.netflix.astyanax</groupId>
+          <artifactId>astyanax-core</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
 
@@ -196,6 +200,16 @@
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>18.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.infinispan</groupId>
+      <artifactId>infinispan-client-hotrod</artifactId>
+      <version>8.2.1.Final</version>
     </dependency>
 
     <!-- Storm -->

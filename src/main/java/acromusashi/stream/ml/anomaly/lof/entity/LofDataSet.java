@@ -19,8 +19,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * Local Outlier Factorの学習モデルを保持するエンティティクラス
@@ -35,7 +35,7 @@ public class LofDataSet implements Serializable
     /** 保持するデータIDのリスト */
     private List<String>          dataIdList       = new ArrayList<>();
 
-    /** 保持するデータID>データ値のマッピング */
+    /** 保持するデータID-データ値のマッピング */
     private Map<String, LofPoint> dataMap          = new HashMap<>();
 
     /**

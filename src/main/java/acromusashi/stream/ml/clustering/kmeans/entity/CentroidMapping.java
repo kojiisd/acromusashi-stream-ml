@@ -12,8 +12,8 @@
 */
 package acromusashi.stream.ml.clustering.kmeans.entity;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * 中心点同士の距離とマッピング情報を保持するエンティティ

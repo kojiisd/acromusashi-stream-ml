@@ -16,6 +16,8 @@ import static org.junit.Assert.assertNull;
 
 import java.util.Map;
 
+import org.apache.storm.trident.operation.TridentOperationContext;
+import org.apache.storm.trident.state.map.MapState;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,8 +25,6 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import storm.trident.operation.TridentOperationContext;
-import storm.trident.state.map.MapState;
 import acromusashi.stream.ml.anomaly.lof.entity.LofDataSet;
 import acromusashi.stream.ml.anomaly.lof.entity.LofResult;
 import acromusashi.stream.ml.common.notify.ResultNotifier;

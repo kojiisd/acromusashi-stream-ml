@@ -19,11 +19,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.storm.trident.state.ValueUpdater;
+import org.apache.storm.trident.state.map.MapState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import storm.trident.state.ValueUpdater;
-import storm.trident.state.map.MapState;
 
 /**
  * 機械学習の結果を外部のデータストアに保持するベースクラス抽象クラス<br>

@@ -23,7 +23,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import acromusashi.stream.ml.anomaly.lof.entity.KDistanceResult;
@@ -39,9 +39,8 @@ public class LofCalculatorTest
 {
     /** 試験用データファイル配置ディレクトリ*/
     private static final String DATA_DIR = "src/test/resources/"
-                                                 + StringUtils.replaceChars(
-                                                         LofCalculatorTest.class.getPackage().getName(),
-                                                         '.', '/') + '/';
+            + StringUtils.replaceChars(LofCalculatorTest.class.getPackage().getName(), '.', '/')
+            + '/';
 
     /**
      * K値3、データ数5の状態で点集合の中に位置するデータを渡した場合にLOF値が小さく算出可能であることを確認する。

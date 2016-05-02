@@ -15,7 +15,7 @@ package acromusashi.stream.ml.common.notify;
 import java.io.Serializable;
 import java.util.Map;
 
-import storm.trident.operation.TridentOperationContext;
+import org.apache.storm.trident.operation.TridentOperationContext;
 
 /**
  * TridentFunctionにおいて初期化を行うためのインタフェース

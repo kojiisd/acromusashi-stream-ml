@@ -17,19 +17,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.storm.trident.operation.TridentCollector;
+import org.apache.storm.trident.state.BaseQueryFunction;
+import org.apache.storm.trident.state.map.MapState;
+import org.apache.storm.trident.tuple.TridentTuple;
+import org.apache.storm.tuple.Values;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import storm.trident.operation.TridentCollector;
-import storm.trident.state.BaseQueryFunction;
-import storm.trident.state.map.MapState;
-import storm.trident.tuple.TridentTuple;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import acromusashi.stream.ml.clustering.kmeans.entity.KmeansDataSet;
 import acromusashi.stream.ml.clustering.kmeans.entity.KmeansPoint;
 import acromusashi.stream.ml.clustering.kmeans.entity.KmeansResult;
-import backtype.storm.tuple.Values;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * LOFに外部からデータを投入する口を提供するクエリ

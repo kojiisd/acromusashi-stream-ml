@@ -14,10 +14,9 @@ package acromusashi.stream.ml.common.notify;
 
 import java.util.Map;
 
+import org.apache.storm.trident.operation.TridentOperationContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import storm.trident.operation.TridentOperationContext;
 
 /**
  * ログレベルがDEBUGの場合のみ結果をログ出力する通知クラス

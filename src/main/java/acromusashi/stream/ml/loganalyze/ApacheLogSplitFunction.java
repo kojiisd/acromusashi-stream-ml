@@ -18,15 +18,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.storm.trident.operation.BaseFunction;
+import org.apache.storm.trident.operation.TridentCollector;
+import org.apache.storm.trident.operation.TridentOperationContext;
+import org.apache.storm.trident.tuple.TridentTuple;
+import org.apache.storm.tuple.Values;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import storm.trident.operation.BaseFunction;
-import storm.trident.operation.TridentCollector;
-import storm.trident.operation.TridentOperationContext;
-import storm.trident.tuple.TridentTuple;
-import backtype.storm.tuple.Values;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -41,7 +40,8 @@ public class ApacheLogSplitFunction extends BaseFunction
     private static final long        serialVersionUID       = 641457679579243381L;
 
     /** logger */
-    private static final Logger      logger                 = LoggerFactory.getLogger(ApacheLogSplitFunction.class);
+    private static final Logger      logger                 = LoggerFactory.getLogger(
+            ApacheLogSplitFunction.class);
 
     /** 「Apacheログ中のDateFormat」デフォルト値 */
     private static final String      DEFAULT_DATEFORMAT_STR = "yyyy-MM-dd'T'HH:mm:SSSZ";

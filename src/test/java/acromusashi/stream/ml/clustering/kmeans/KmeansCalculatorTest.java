@@ -23,18 +23,18 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.google.common.collect.Lists;
 
 import acromusashi.stream.ml.clustering.kmeans.entity.CentroidMapping;
 import acromusashi.stream.ml.clustering.kmeans.entity.CentroidsComparator;
 import acromusashi.stream.ml.clustering.kmeans.entity.KmeansDataSet;
 import acromusashi.stream.ml.clustering.kmeans.entity.KmeansPoint;
 import acromusashi.stream.ml.clustering.kmeans.entity.KmeansResult;
-
-import com.google.common.collect.Lists;
 
 /**
  * KmeansCalculatorのテストクラス

@@ -17,11 +17,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import storm.trident.operation.TridentCollector;
-import storm.trident.operation.TridentOperationContext;
-import storm.trident.state.BaseStateUpdater;
-import storm.trident.state.map.MapState;
-import storm.trident.tuple.TridentTuple;
+import org.apache.storm.trident.operation.TridentCollector;
+import org.apache.storm.trident.operation.TridentOperationContext;
+import org.apache.storm.trident.state.BaseStateUpdater;
+import org.apache.storm.trident.state.map.MapState;
+import org.apache.storm.trident.tuple.TridentTuple;
+
 import acromusashi.stream.ml.clustering.kmeans.entity.KmeansDataSet;
 import acromusashi.stream.ml.clustering.kmeans.entity.KmeansPoint;
 import acromusashi.stream.ml.clustering.kmeans.entity.KmeansResult;
